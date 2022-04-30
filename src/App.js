@@ -6,9 +6,9 @@ import {
   BrowserRouter,
   Routes,
   Route,
-  Link,
 } from "react-router-dom";
 import Checkout from './Checkout';
+
 function App() {
   return (
     <BrowserRouter>
