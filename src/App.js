@@ -8,17 +8,33 @@ import {
   Route,
 } from "react-router-dom";
 import Checkout from './Checkout';
+import Login from './Login';
 
 function App() {
   return (
     <BrowserRouter>
     <div className="app">
 
-    <Header/>
+    
       <Routes>
+        <Route path='/login' element={<Login/>}/>
+        <Route path="/" element={
+        <> 
+
+        <Header/>
+        <Home />
+        </>}
+         />
+        <Route path="/checkout" element={
+        <>
+
+        <Header/>
+
+         <Checkout/>
+         </>} 
+
+         />
         
-        <Route path="/" element={<Home />} />
-        <Route path="/checkout" element={<Checkout/>} />
       </Routes>
       </div>
     </BrowserRouter>
