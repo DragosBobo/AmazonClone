@@ -13,8 +13,10 @@ function App() {
   return (
     <BrowserRouter>
     <div className="app">
+
     <Header/>
       <Routes>
+        
         <Route path="/" element={<Home />} />
         <Route path="/checkout" element={<Checkout/>} />
       </Routes>
