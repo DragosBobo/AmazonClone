@@ -26,7 +26,7 @@ function Header() {
      </div>
         <div className='header__nav'>
             <div className='header__option' onClick={handleAuthentication}>
-            <Link to="/login" style={{ textDecoration: 'none' ,
+            <Link to={!user && '/login'} style={{ textDecoration: 'none' ,
              display: 'flex',
              flexDirection:'column',
              color:'white'}}>
